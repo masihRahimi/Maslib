@@ -59,6 +59,7 @@
         border: 2px solid black;
         border-collapse: collapse;
         text-align: center;
+        
       }
       table{
         width: 100%;
@@ -66,8 +67,8 @@
      </style>
 
 <table>
-  <tr>
-    <th>Author</th>
+  <tr style="background-color: black;color: white;">
+    <th >Author</th>
     <th>Year</th>
     <th>Story</th>
     <th>Actions</th>
@@ -78,8 +79,8 @@
         <td><%- book.author %></td>
         <td><%- book.year %></td>
         <td><%- book.story %></td>
-        <td > <a href="/History/delete/<%= book._id %>"><button class="btn btn-outline-danger mt-1 mb-1">     <i class="fa fa-remove"></i>Delete</button></a></td>
-        <td> <a href="/editform/History/<%= book._id %>"> <button class="btn btn-outline-info"><i class="fa fa-edit"></i>Edit</button> </a> </td>
+        <td > <a href="/History/delete/<%= book._id %>"><button class="btn btn-outline-danger mt-1 mb-1">     <i class="fa fa-remove"></i>Delete</button></a>  <a href="/History/editform/<%= book._id %>"> <button class="btn btn-outline-info ms-5"><i class="fa fa-edit"></i>Edit</button> </a></td>
+     
       </tr>
     
    <%  }); %>

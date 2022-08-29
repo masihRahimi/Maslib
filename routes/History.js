@@ -32,6 +32,18 @@ router.get('/delete/:id',function(req,res,next){
 });
 
 
+router.get('/editform/:id', function(req,res,next){
+  booksmodel.findOne({_id: req.params.id}, (err,response)=>{
+    res.render('editform', {editdata: response})
+  })
+})
+
+router.post('/edit', function(req,res,next){
+  booksmodel.findByIdAndUpdate({_id: req.body.id}, {author: req.body.author, year: req.body.year, story: req.body.story} , ()=>{
+    res.redirect('/History')
+  })
+})
+
 
 
 module.exports = router;
