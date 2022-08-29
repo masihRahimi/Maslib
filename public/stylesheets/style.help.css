@@ -1,0 +1,49 @@
+
+  
+  .h2font{
+    font-weight: 800 !important;
+    font-size: 50px;
+    padding-left: 65px;
+  }
+  
+  .h6font{
+    color: #716f6f;
+    padding-left: 70px;
+    
+  }
+  
+  .img-wrapper{
+    width: 500px;
+  }
+  
+  .photo{
+    height: 400px;
+    width: 400px;
+    
+
+  }
+  
+  input, textarea, select{
+    background: #f7f9f8 !important;
+  }
+  
+  .email-us{
+    text-decoration: underline;
+  }
+  
+  label{
+    font-weight: 600;
+    color: #716f6f
+  }
+  
+  button{
+    float: right;
+    margin-top: 10px;
+  }
+  button span{
+    margin-left: 8px;  
+  }
+  
+  button i{
+    margin: 0px 8px;
+  }
