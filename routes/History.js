@@ -1,14 +1,11 @@
-const { response } = require('express');
+/* const { response } = require('express'); */
 var express = require('express');
 /* const { rawListeners } = require('../Models/books'); */
 var router = express.Router();
 /* var booksmodel = require('../Models/books') */
 /* GET home page. */
-router.get('/', function(req, res, next) {
-
- 
+router.get('/', function(req, res, next) { 
     res.render('History');
-
 
 });
 
