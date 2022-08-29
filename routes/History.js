@@ -7,12 +7,12 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
  
-    res.render('History', {books:response});
+    res.render('History');
 
 
 });
 
-/* booksmodel.find(function(err,response){
+/* booksmodel.find(function(err,response){   , {books:response}
 
 }); */
 
