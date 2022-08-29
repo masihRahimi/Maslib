@@ -1,22 +1,18 @@
 const { response } = require('express');
 var express = require('express');
-/* const { rawListeners } = require('../Models/books'); */
+const { rawListeners } = require('../Models/books');
 var router = express.Router();
-/* var booksmodel = require('../Models/books') */
+var booksmodel = require('../Models/books')
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
- 
-    res.render('History');
-
+  booksmodel.find(function(err,response){
+    res.render('History', {books:response});
+  });
 
 });
 
-/* booksmodel.find(function(err,response){   , {books:response}
 
-}); */
-
-/* 
 router.post('/addbook', function(req,res,next){
   let newbook = new booksmodel({
     author: req.body.author,
@@ -46,7 +42,7 @@ router.post('/edit', function(req,res,next){
   booksmodel.findByIdAndUpdate({_id: req.body.id}, {author: req.body.author, year: req.body.year, story: req.body.story} , ()=>{
     res.redirect('/History')
   })
-}) */
+})
 
 
 
