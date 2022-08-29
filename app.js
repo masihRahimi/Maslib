@@ -18,7 +18,7 @@ var HelpRouter = require('./routes/Help')
 var app = express();
 
 // database connection
-var mongoose = require('mongoose');
+/* var mongoose = require('mongoose'); */
 /* mongoose.connect('mongodb://localhost/Maslabdb');
 var contactusmodel = ('./Models/contactus')
 var booksmodel = require('./Models/books') */
