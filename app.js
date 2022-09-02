@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config()
+
 var explayouts = require('express-ejs-layouts')
 
 var indexRouter = require('./routes/index');
@@ -19,9 +21,9 @@ var app = express();
 
 // database connection
 var mongoose = require('mongoose');
-/* mongoose.connect('mongodb://localhost/Maslabdb');
+ mongoose.connect(process.env.DB_URL);
 var contactusmodel = ('./Models/contactus')
-var booksmodel = require('./Models/books') */
+var booksmodel = require('./Models/books') 
 
 
 
